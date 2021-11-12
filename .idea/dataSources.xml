@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="LibraryManagement@localhost" uuid="3eff9673-02fc-42b8-b430-8981c72c6cb8">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/LibraryManagement</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="LibraryManagement@localhost [2]" uuid="c5b1f6c1-3382-45dd-a228-7b6b210e2832">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/LibraryManagement</jdbc-url>
+    </data-source>
+  </component>
+</project>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ManageBookContext" prefHeight="681.0" prefWidth="1059.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageBooksFormController">
+   <children>
+      <AnchorPane prefHeight="41.0" prefWidth="1059.0" style="-fx-background-color: #0652DD;">
+         <children>
+            <Separator layoutX="5.0" layoutY="18.0" prefHeight="11.0" prefWidth="443.0" />
+            <Separator layoutX="614.0" layoutY="17.0" prefHeight="11.0" prefWidth="443.0" />
+            <Label layoutX="450.0" layoutY="4.0" text="Manage Books" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button layoutX="716.0" layoutY="237.0" mnemonicParsing="false" onAction="#ModifyBookOnAction" prefHeight="31.0" prefWidth="151.0" style="-fx-background-color: #FFC312; -fx-background-radius: 50;" text="Modify Book" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="885.0" layoutY="237.0" mnemonicParsing="false" onAction="#RemoveBookOnAction" prefHeight="31.0" prefWidth="151.0" style="-fx-background-color: #EA2027; -fx-background-radius: 50;" text="Remove Book" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tblBook" layoutX="13.0" layoutY="297.0" prefHeight="370.0" prefWidth="1034.0" styleClass="table-View" stylesheets="@../assets/styles/EmployeeForm.css">
+         <columns>
+            <TableColumn fx:id="colBookID" prefWidth="89.0" text="Book ID" />
+            <TableColumn fx:id="colBookName" prefWidth="207.0" text="Book Name" />
+            <TableColumn fx:id="colWritterName" prefWidth="180.0" text="Writter Name" />
+            <TableColumn fx:id="colLanauage" prefWidth="149.0" text="Book Lanuage" />
+            <TableColumn fx:id="colbookPrice" prefWidth="120.0" text="Book Price" />
+            <TableColumn fx:id="colType" prefWidth="147.0" text="Type" />
+            <TableColumn fx:id="colAddDate" prefWidth="141.0" text="Add Date" />
+         </columns>
+      </TableView>
+      <Separator layoutX="575.0" layoutY="40.0" prefWidth="200.0" />
+      <VBox layoutX="22.0" layoutY="106.0" onKeyReleased="#OnActionOne" prefHeight="182.0" prefWidth="496.0" stylesheets="@../assets/styles/EmployeeForm.css">
+         <children>
+            <AnchorPane prefHeight="42.0" prefWidth="438.0" styleClass="textPane">
+               <children>
+                  <TextField fx:id="txtName" layoutX="13.0" layoutY="8.0" prefHeight="28.0" prefWidth="406.0" promptText="Madol Duwa" styleClass="textField" />
+                  <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Book Name" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </AnchorPane>
+            <AnchorPane prefHeight="42.0" prefWidth="438.0" styleClass="textPane">
+               <children>
+                  <TextField fx:id="txtType" layoutX="13.0" layoutY="8.0" prefHeight="28.0" prefWidth="406.0" promptText="Biograpy" styleClass="textField" />
+                  <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Type" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </AnchorPane>
+            <AnchorPane prefHeight="42.0" prefWidth="438.0" styleClass="textPane">
+               <children>
+                  <TextField fx:id="txtBookPrice" layoutX="13.0" layoutY="8.0" prefHeight="28.0" prefWidth="406.0" promptText="400.000" styleClass="textField" />
+                  <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Book Price" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <VBox layoutX="537.0" layoutY="82.0" onKeyReleased="#onActionTwo" prefHeight="147.0" prefWidth="508.0" stylesheets="@../assets/styles/EmployeeForm.css">
+         <children>
+            <AnchorPane prefHeight="42.0" prefWidth="438.0" styleClass="textPane">
+               <children>
+                  <TextField fx:id="txtWirtterName" layoutX="13.0" layoutY="8.0" prefHeight="28.0" prefWidth="406.0" promptText="Martin Wikramasinghe" styleClass="textField" />
+                  <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="writter Name" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" top="20.0" />
+               </VBox.margin>
+            </AnchorPane>
+            <AnchorPane prefHeight="42.0" prefWidth="438.0" styleClass="textPane">
+               <children>
+                  <TextField fx:id="txtLan" layoutX="13.0" layoutY="8.0" prefHeight="28.0" prefWidth="406.0" promptText="Sinhala" styleClass="textField" />
+                  <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Book Lanuagae" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <AnchorPane layoutY="43.0" prefHeight="42.0" prefWidth="1059.0" style="-fx-background-color: #0652DD;">
+         <children>
+            <Label layoutX="461.0" layoutY="6.0" text="Date  -:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="842.0" layoutY="3.0" text="Time  -:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="7.0" layoutY="6.0" text="Book ID  -:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblBookId" layoutX="107.0" layoutY="6.0" text="B-001" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="536.0" layoutY="6.0" prefHeight="30.0" prefWidth="123.0" text="2021/09/10" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTime" layoutX="914.0" layoutY="6.0" prefHeight="30.0" prefWidth="123.0" text="2021/09/10" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="42.0" prefWidth="438.0" styleClass="textPane" />
+      <Button fx:id="btnSaveBook" layoutX="552.0" layoutY="237.0" mnemonicParsing="false" onAction="#AddBookOnAction" prefHeight="31.0" prefWidth="142.0" style="-fx-background-color: #009432; -fx-background-radius: 50;" text="Add Book" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

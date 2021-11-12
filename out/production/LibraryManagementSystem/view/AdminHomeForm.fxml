@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AdminContext" prefHeight="697.0" prefWidth="1372.0" style="-fx-background-color: #0652DD;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminHomeFormController">
+   <children>
+      <ImageView fitHeight="707.0" fitWidth="1098.0" layoutX="276.0" opacity="0.7" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="274.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../assets/554845-gettyimages-685052898_super.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="30.0" layoutY="120.0" mnemonicParsing="false" onAction="#ManageBookOnAction" prefHeight="38.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="Manage Book" textFill="#0652dd" AnchorPane.bottomAnchor="569.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="1142.0" AnchorPane.topAnchor="120.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Label layoutX="90.0" layoutY="66.0" text="Administrator" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="30.0" layoutY="168.0" mnemonicParsing="false" onAction="#ManageEmployeeOnActions" prefHeight="31.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 50;" text=" Manage Employee" textFill="#0652dd">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="30.0" layoutY="218.0" mnemonicParsing="false" onAction="#ManageSalaryOnAction" prefHeight="27.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="Manage Salary" textFill="#0652dd">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="30.0" layoutY="273.0" mnemonicParsing="false" onAction="#GoOrderNewBookOnAction" prefHeight="27.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="Order Book Item List " textFill="#0652dd">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="30.0" layoutY="329.0" mnemonicParsing="false" onAction="#ManageSupplierOnAction" prefHeight="27.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="Manage Supplier" textFill="#0652dd">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="30.0" layoutY="385.0" mnemonicParsing="false" onAction="#ViewMemberDetailOnAction" prefHeight="27.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="View Memeber Detail" textFill="#0652dd">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="30.0" layoutY="441.0" mnemonicParsing="false" onAction="#ViewIssueBookOnAction" prefHeight="27.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="View Issue Books" textFill="#0652dd">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="14.0" layoutY="666.0" text="Version 1.0.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="38.0" fitWidth="48.0" layoutX="41.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/unnamed.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="30.0" layoutY="50.0" prefWidth="200.0" />
+      <Separator layoutX="30.0" layoutY="105.0" prefWidth="200.0" />
+      <AnchorPane fx:id="LoadContext" layoutX="294.0" layoutY="20.0" prefHeight="681.0" prefWidth="1059.0">
+         <children>
+            <TextField fx:id="txtDate" disable="true" layoutX="14.0" layoutY="14.0" prefHeight="65.0" prefWidth="318.0">
+               <font>
+                  <Font size="38.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtTime" disable="true" layoutX="332.0" layoutY="14.0" prefHeight="54.0" prefWidth="299.0">
+               <font>
+                  <Font size="38.0" />
+               </font>
+            </TextField>
+            <Label layoutX="23.0" layoutY="110.0" text="Common Reports">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Separator layoutX="23.0" layoutY="136.0" prefHeight="3.0" prefWidth="148.0" />
+            <AnchorPane layoutX="23.0" layoutY="158.0" prefHeight="67.0" prefWidth="238.0" style="-fx-background-color: #0652DD;">
+               <children>
+                  <ImageView fitHeight="73.0" fitWidth="68.0" layoutX="170.0" opacity="0.39" pickOnBounds="true">
+                     <image>
+                        <Image url="@../assets/unnamed.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="7.0" layoutY="37.0" text="Availble All Books" textFill="#fffafa">
+                     <font>
+                        <Font name="Serif Bold Italic" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblAvailbleBook" layoutX="70.0" layoutY="8.0" text="00" textFill="#fffafa">
+                     <font>
+                        <Font name="Serif Bold" size="26.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="292.0" layoutY="158.0" prefHeight="67.0" prefWidth="238.0" style="-fx-background-color: #FFC312;">
+               <children>
+                  <ImageView fitHeight="73.0" fitWidth="68.0" layoutX="170.0" opacity="0.39" pickOnBounds="true">
+                     <image>
+                        <Image url="@../assets/unnamed.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="19.0" layoutY="37.0" text="Issue All Books" textFill="#fffafa">
+                     <font>
+                        <Font name="Serif Bold Italic" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblIssueBook" layoutX="70.0" layoutY="8.0" text="00" textFill="#fffafa">
+                     <font>
+                        <Font name="Serif Bold" size="26.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="546.0" layoutY="158.0" prefHeight="67.0" prefWidth="238.0" style="-fx-background-color: #009432;">
+               <children>
+                  <ImageView fitHeight="73.0" fitWidth="68.0" layoutX="170.0" opacity="0.39" pickOnBounds="true">
+                     <image>
+                        <Image url="@../assets/unnamed.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="19.0" layoutY="37.0" text="Return All Books" textFill="#fffafa">
+                     <font>
+                        <Font name="Serif Bold Italic" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblReturnBooks" layoutX="70.0" layoutY="8.0" text="00" textFill="#fffafa">
+                     <font>
+                        <Font name="Serif Bold" size="26.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="807.0" layoutY="158.0" prefHeight="67.0" prefWidth="238.0" style="-fx-background-color: #EA2027;">
+               <children>
+                  <ImageView fitHeight="73.0" fitWidth="68.0" layoutX="170.0" opacity="0.39" pickOnBounds="true">
+                     <image>
+                        <Image url="@../assets/unnamed.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="7.0" layoutY="37.0" text="Current Members " textFill="#fffafa">
+                     <font>
+                        <Font name="Serif Bold Italic" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblCurrentMember" layoutX="70.0" layoutY="8.0" text="00" textFill="#fffafa">
+                     <font>
+                        <Font name="Serif Bold" size="26.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="23.0" layoutY="248.0" prefHeight="67.0" prefWidth="238.0" style="-fx-background-color: #EE5A24;">
+               <children>
+                  <ImageView fitHeight="73.0" fitWidth="68.0" layoutX="170.0" opacity="0.39" pickOnBounds="true">
+                     <image>
+                        <Image url="@../assets/unnamed.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="7.0" layoutY="37.0" text="Current Employees" textFill="#fffafa">
+                     <font>
+                        <Font name="Serif Bold Italic" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblCurrentEmployee" layoutX="70.0" layoutY="8.0" text="00" textFill="#fffafa">
+                     <font>
+                        <Font name="Serif Bold" size="26.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="292.0" layoutY="248.0" prefHeight="67.0" prefWidth="238.0" style="-fx-background-color: #833471;">
+               <children>
+                  <ImageView fitHeight="73.0" fitWidth="68.0" layoutX="170.0" opacity="0.39" pickOnBounds="true">
+                     <image>
+                        <Image url="@../assets/unnamed.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="37.0" layoutY="37.0" text="Lost Books" textFill="#fffafa">
+                     <font>
+                        <Font name="Serif Bold Italic" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblLostBook" layoutX="70.0" layoutY="8.0" text="00" textFill="#fffafa">
+                     <font>
+                        <Font name="Serif Bold" size="26.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="546.0" layoutY="248.0" prefHeight="67.0" prefWidth="238.0" style="-fx-background-color: #1B1464;">
+               <children>
+                  <ImageView fitHeight="73.0" fitWidth="68.0" layoutX="170.0" opacity="0.39" pickOnBounds="true">
+                     <image>
+                        <Image url="@../assets/unnamed.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutY="37.0" text="Late Returned Fines" textFill="#fffafa">
+                     <font>
+                        <Font name="Serif Bold Italic" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblReturnedFines" layoutX="70.0" layoutY="8.0" text="00" textFill="#fffafa">
+                     <font>
+                        <Font name="Serif Bold" size="26.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="807.0" layoutY="248.0" prefHeight="67.0" prefWidth="238.0" style="-fx-background-color: #006266;">
+               <children>
+                  <ImageView fitHeight="73.0" fitWidth="68.0" layoutX="170.0" opacity="0.39" pickOnBounds="true">
+                     <image>
+                        <Image url="@../assets/unnamed.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutY="37.0" text="Losted Book Fines" textFill="#fffafa">
+                     <font>
+                        <Font name="Serif Bold Italic" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblLOstFines" layoutX="70.0" layoutY="8.0" text="00" textFill="#fffafa">
+                     <font>
+                        <Font name="Serif Bold" size="26.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+      <Label layoutX="7.0" layoutY="14.0" text="BADDEGAMA PUBLIC LIBRARY" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="52.0" layoutY="615.0" mnemonicParsing="false" onAction="#GoBackOnAction" prefHeight="38.0" prefWidth="144.0" style="-fx-background-color: RED; -fx-background-radius: 50;" text="LOGOUT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="30.0" layoutY="499.0" mnemonicParsing="false" onAction="#EmployeeAttendenceOnAction" prefHeight="27.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="Employee Attendence" textFill="#0652dd">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

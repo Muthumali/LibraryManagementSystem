@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="IssueBookReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="bcb42dde-ad3d-41d0-acc7-3a20900b5528">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapter.xml"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<queryString>
+		<![CDATA[Select * from IssueBook]]>
+	</queryString>
+	<field name="issueId" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="issueId"/>
+		<property name="com.jaspersoft.studio.field.label" value="issueId"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="issuebook"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="issueDate" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="issueDate"/>
+		<property name="com.jaspersoft.studio.field.label" value="issueDate"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="issuebook"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="endDate" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="endDate"/>
+		<property name="com.jaspersoft.studio.field.label" value="endDate"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="issuebook"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bookId" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="bookId"/>
+		<property name="com.jaspersoft.studio.field.label" value="bookId"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="issuebook"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="memberId" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="memberId"/>
+		<property name="com.jaspersoft.studio.field.label" value="memberId"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="issuebook"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="empId" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="empId"/>
+		<property name="com.jaspersoft.studio.field.label" value="empId"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="issuebook"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="12" width="555" height="30" forecolor="#091A63" uuid="2faccafb-c913-433d-8910-0afa068e524e"/>
+				<textElement textAlignment="Center">
+					<font size="22"/>
+				</textElement>
+				<text><![CDATA[BADDEGAMA PUBLIC LIBRARY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="47" width="555" height="30" forecolor="#D11504" uuid="32f4c240-0791-4b4a-8ef4-e312fdb476eb"/>
+				<textElement textAlignment="Center">
+					<font size="17"/>
+				</textElement>
+				<text><![CDATA[Issue Book Reports]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="95" height="30" uuid="a5f2ab6a-7670-49eb-bac1-70f691299b93">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2e24a3a1-1df3-4530-a6bb-6d94aa76e491"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Issue ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="95" y="0" width="92" height="30" uuid="e4c7e446-d844-4bbd-8071-3d40b6c933e5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ea5ade0f-9b7b-486b-a7e4-0ef4d5f59140"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Issue Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="187" y="0" width="92" height="30" uuid="663d0bdf-a6dc-4077-9dc0-fdb0cb706ed4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="713c1fc6-3e58-407b-bfae-a7735a98704e"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Return Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="279" y="0" width="92" height="30" uuid="77cca47f-3c1b-447d-9ed5-3630e6e923e0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="38364865-aa31-43d2-8f52-8471fb4dae54"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Book ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="371" y="0" width="92" height="30" uuid="7c9f5893-67b1-4274-af5c-78fe514cb9f0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0aabcb8a-a3fc-4a58-9efe-c5d2164fd546"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Member ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="463" y="0" width="92" height="30" uuid="8c726bda-f6b2-429c-aea0-b08f2d8faa2f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0979fff9-e50a-4f25-8177-4cba4f03365b"/>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Issue Employee ID]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="95" height="30" uuid="b9e3df10-2deb-4d18-bea0-124100f15147">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2e24a3a1-1df3-4530-a6bb-6d94aa76e491"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{issueId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="95" y="0" width="92" height="30" uuid="dd505a77-c7dd-481d-ac43-7deef3b37af4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ea5ade0f-9b7b-486b-a7e4-0ef4d5f59140"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{issueDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="187" y="0" width="92" height="30" uuid="ea5f253b-0476-40b0-9f00-79c0ef6b3f51">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="713c1fc6-3e58-407b-bfae-a7735a98704e"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{endDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="279" y="0" width="92" height="30" uuid="482b9502-3a18-4481-82c0-9c12e02331e2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="38364865-aa31-43d2-8f52-8471fb4dae54"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{bookId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="371" y="0" width="92" height="30" uuid="890ef6f8-892b-4f26-80f1-487815a5e920">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0aabcb8a-a3fc-4a58-9efe-c5d2164fd546"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{memberId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="463" y="0" width="92" height="30" uuid="f84383d6-730c-42c4-bc03-9a2710692adb">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0979fff9-e50a-4f25-8177-4cba4f03365b"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{empId}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="688.0" prefWidth="1058.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EmployeeAttendenceFormController">
+   <children>
+      <AnchorPane prefHeight="40.0" prefWidth="1061.0" style="-fx-background-color: #0652DD;">
+         <children>
+            <Label layoutX="437.0" layoutY="7.0" text="Employee Attendence" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Separator layoutX="2.0" layoutY="18.0" prefHeight="4.0" prefWidth="435.0" />
+            <Separator layoutX="624.0" layoutY="15.0" prefHeight="11.0" prefWidth="420.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="9.0" layoutY="97.0" prefHeight="111.0" prefWidth="1050.0" style="-fx-background-color: white;">
+         <children>
+            <JFXTextField fx:id="txtEmpId" focusColor="RED" labelFloat="true" layoutX="14.0" layoutY="14.0" onAction="#SelectEmpData" prefHeight="25.0" prefWidth="204.0" promptText="Employee ID" unFocusColor="RED" />
+            <JFXTextField fx:id="txtEmpName" editable="false" labelFloat="true" layoutX="234.0" layoutY="14.0" prefHeight="25.0" prefWidth="204.0" promptText="Employee Name" unFocusColor="BLUE" />
+            <JFXTextField fx:id="txtAddress" editable="false" labelFloat="true" layoutX="454.0" layoutY="14.0" prefHeight="25.0" prefWidth="297.0" promptText="Address" unFocusColor="BLUE" />
+            <JFXTextField fx:id="txtNic" editable="false" labelFloat="true" layoutX="768.0" layoutY="14.0" prefHeight="25.0" prefWidth="267.0" promptText="NIC" unFocusColor="BLUE" />
+            <JFXTextField fx:id="txtBirthday" editable="false" labelFloat="true" layoutX="234.0" layoutY="59.0" prefHeight="27.0" prefWidth="204.0" promptText="BirthDay" unFocusColor="BLUE" />
+            <JFXTextField fx:id="txtContact" editable="false" labelFloat="true" layoutX="454.0" layoutY="59.0" prefHeight="27.0" prefWidth="204.0" promptText="Contact" unFocusColor="BLUE" />
+            <JFXTextField fx:id="txtPost" editable="false" labelFloat="true" layoutX="666.0" layoutY="59.0" prefHeight="27.0" prefWidth="204.0" promptText="Post" unFocusColor="BLUE" />
+            <JFXTextField fx:id="txtQuli" editable="false" labelFloat="true" layoutX="878.0" layoutY="59.0" prefHeight="27.0" prefWidth="157.0" promptText="Qulification" unFocusColor="BLUE" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="47.0" prefHeight="40.0" prefWidth="1061.0" style="-fx-background-color: #0652DD;">
+         <children>
+            <Label layoutX="14.0" layoutY="7.0" text="Number  -:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="454.0" layoutY="9.0" text="Date  -:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="531.0" layoutY="7.0" text="2021/09/11" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="863.0" layoutY="7.0" text="Time  -:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTime" layoutX="937.0" layoutY="7.0" prefHeight="27.0" prefWidth="99.0" text="4:19 PM" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblId" layoutX="115.0" layoutY="9.0" prefHeight="27.0" prefWidth="56.0" text="A-000" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <TableView fx:id="tblAttendence" layoutY="270.0" prefHeight="408.0" prefWidth="1061.0">
+        <columns>
+          <TableColumn fx:id="colNumber" prefWidth="75.0" text="Number" />
+          <TableColumn fx:id="colDate" prefWidth="167.0" text="Date" />
+            <TableColumn fx:id="colHours" prefWidth="190.0" text="Working Hours" />
+            <TableColumn fx:id="colWorkingType" prefWidth="170.0" text="Working Type" />
+            <TableColumn fx:id="colEmpId" prefWidth="143.0" text="Employee Id" />
+            <TableColumn fx:id="colEmpName" prefWidth="155.0" text="Employee Name" />
+            <TableColumn fx:id="colPost" prefWidth="156.0" text="Post" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnReport" layoutX="890.0" layoutY="213.0" mnemonicParsing="false" onAction="#AttendenceReportOnAction" prefHeight="29.0" prefWidth="145.0" style="-fx-background-color: purple; -fx-background-radius: 50;" text="Attendence Report" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="704.0" layoutY="213.0" mnemonicParsing="false" onAction="#AddAttendenceOnAction" prefHeight="29.0" prefWidth="163.0" style="-fx-background-color: #009432; -fx-background-radius: 50;" text="Add  Attendence " textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="14.0" layoutY="214.0" prefHeight="27.0" prefWidth="145.0" text="Working Type  -:" textFill="#bf0808">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbWorkingTypes" layoutX="162.0" layoutY="215.0" prefHeight="25.0" prefWidth="216.0" />
+      <Label layoutX="400.0" layoutY="214.0" prefHeight="27.0" prefWidth="157.0" text="Working Hours-:" textFill="#bf0808">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblWokingHours" alignment="TOP_CENTER" layoutX="549.0" layoutY="214.0" prefHeight="27.0" prefWidth="32.0" text="00">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ManageEmployeeContext" prefHeight="681.0" prefWidth="1059.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageEmployeeFormController">
+    <children>
+        <AnchorPane prefHeight="41.0" prefWidth="1059.0" style="-fx-background-color: #0652DD;">
+            <children>
+                <Separator layoutX="5.0" layoutY="26.0" prefHeight="3.0" prefWidth="393.0" />
+                <Separator layoutX="620.0" layoutY="25.0" prefHeight="3.0" prefWidth="437.0" />
+                <Label layoutX="412.0" layoutY="4.0" text="Manage Employee" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="23.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <Button layoutX="715.0" layoutY="312.0" mnemonicParsing="false" onAction="#ModifyEmployeeOnAction" prefHeight="31.0" prefWidth="151.0" style="-fx-background-color: #FFC312; -fx-background-radius: 50;" text="Modify Employee" textFill="WHITE">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <Button layoutX="887.0" layoutY="312.0" mnemonicParsing="false" onAction="#RemoveEmployeeOnAction" prefHeight="31.0" prefWidth="151.0" style="-fx-background-color: #EA2027; -fx-background-radius: 50;" text="Remove Employee" textFill="WHITE">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <TableView fx:id="tblEmployee" layoutX="25.0" layoutY="395.0" prefHeight="272.0" prefWidth="1022.0" styleClass="table-View" stylesheets="@../assets/styles/EmployeeForm.css">
+            <columns>
+                <TableColumn fx:id="colEmpId" prefWidth="89.0" text="Employee ID" />
+                <TableColumn fx:id="colEmpName" prefWidth="165.0" text="Employee Name" />
+                <TableColumn fx:id="colAddress" prefWidth="157.0" text="Address" />
+                <TableColumn fx:id="colNic" prefWidth="121.0" text="NIC" />
+                <TableColumn fx:id="colBirthday" prefWidth="117.0" text="Birthday" />
+                <TableColumn fx:id="colContact" prefWidth="123.0" text="Contact" />
+                <TableColumn fx:id="colPost" prefWidth="130.0" text="Post" />
+            <TableColumn fx:id="colQuli" prefWidth="119.0" text="Qulification" />
+            </columns>
+        </TableView>
+        <Separator layoutX="575.0" layoutY="40.0" prefWidth="200.0" />
+      <VBox layoutX="25.0" layoutY="50.0" onKeyReleased="#OneAction" prefHeight="306.0" prefWidth="492.0" stylesheets="@../assets/styles/EmployeeForm.css">
+         <children>
+            <AnchorPane prefHeight="42.0" prefWidth="438.0" styleClass="textPane">
+               <children>
+                  <TextField fx:id="txtEmpId" disable="true" layoutX="13.0" layoutY="8.0" prefHeight="28.0" prefWidth="406.0" promptText="E00-001" styleClass="textField" />
+                  <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Employee ID" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" top="20.0" />
+               </VBox.margin>
+            </AnchorPane>
+            <AnchorPane prefHeight="42.0" prefWidth="438.0" styleClass="textPane">
+               <children>
+                  <TextField fx:id="txtAddress" layoutX="13.0" layoutY="8.0" prefHeight="28.0" prefWidth="406.0" promptText="Colombo 2" styleClass="textField" />
+                  <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Address" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </AnchorPane>
+            <AnchorPane prefHeight="42.0" prefWidth="438.0" styleClass="textPane">
+               <children>
+                  <TextField fx:id="txtBirthday" layoutX="13.0" layoutY="8.0" prefHeight="28.0" prefWidth="406.0" promptText="1999-05-07" styleClass="textField" />
+                  <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Birthday" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </AnchorPane>
+            <AnchorPane prefHeight="42.0" prefWidth="438.0" styleClass="textPane">
+               <children>
+                  <TextField fx:id="txtPost" layoutX="13.0" layoutY="8.0" prefHeight="28.0" prefWidth="406.0" promptText="Library Assistant" styleClass="textField" />
+                  <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Post " />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </AnchorPane>
+            <AnchorPane prefHeight="42.0" prefWidth="438.0" styleClass="textPane">
+               <children>
+                  <TextField fx:id="txtPassword" layoutX="13.0" layoutY="8.0" prefHeight="28.0" prefWidth="406.0" promptText="Login Password" styleClass="textField" />
+                  <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Password" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <VBox layoutX="536.0" layoutY="50.0" onKeyReleased="#TwoAction" prefHeight="262.0" prefWidth="508.0" stylesheets="@../assets/styles/EmployeeForm.css">
+         <children>
+            <AnchorPane prefHeight="42.0" prefWidth="438.0" styleClass="textPane">
+               <children>
+                  <TextField fx:id="txtName" layoutX="13.0" layoutY="8.0" prefHeight="28.0" prefWidth="406.0" promptText="Muthumali Dilrukshi" styleClass="textField" />
+                  <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Employee Name" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" top="20.0" />
+               </VBox.margin>
+            </AnchorPane>
+            <AnchorPane prefHeight="42.0" prefWidth="438.0" styleClass="textPane">
+               <children>
+                  <TextField fx:id="txtNIC" layoutX="13.0" layoutY="8.0" prefHeight="28.0" prefWidth="406.0" promptText="996280187V" styleClass="textField" />
+                  <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="NIC" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </AnchorPane>
+            <AnchorPane prefHeight="42.0" prefWidth="438.0" styleClass="textPane">
+               <children>
+                  <TextField fx:id="txtContact" layoutX="13.0" layoutY="8.0" prefHeight="28.0" prefWidth="406.0" promptText="0760133752" styleClass="textField" />
+                  <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Contact Number" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </AnchorPane>
+            <AnchorPane prefHeight="42.0" prefWidth="438.0" styleClass="textPane">
+               <children>
+                  <TextField fx:id="txtQuli" layoutX="13.0" layoutY="8.0" prefHeight="28.0" prefWidth="406.0" promptText="A/L" styleClass="textField" />
+                  <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Qualification" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </AnchorPane>
+         </children>
+      </VBox>
+        <Button fx:id="btnSaveOnAction" layoutX="549.0" layoutY="312.0" mnemonicParsing="false" onAction="#AddEmployeeOnAction" prefHeight="31.0" prefWidth="142.0" style="-fx-background-color: #009432; -fx-background-radius: 50;" text="Add Employee" textFill="WHITE">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+      <Button fx:id="BtnReport" layoutX="891.0" layoutY="356.0" mnemonicParsing="false" onAction="#EmployeeReportOnAction" prefHeight="31.0" prefWidth="142.0" style="-fx-background-color: purple; -fx-background-radius: 50;" text="Employee Report" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
